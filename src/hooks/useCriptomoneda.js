@@ -22,6 +22,8 @@ const Select = styled.select`
 `
 
 const useCriptomoneda = (label, stateInicial ,opciones) => {
+    
+    //console.log(opciones);
     //State de nuestro custom hook 
     const [state, actualizarState] = useState(stateInicial);
 
@@ -33,9 +35,9 @@ const useCriptomoneda = (label, stateInicial ,opciones) => {
                 value={state}
             >
                 <option value="" >--seleccione--</option>
-                {/* {  opciones.map(opcion => (
+                {  opciones.map(opcion => (
                     <option key={opcion.CoinInfo.Id} value={opcion.CoinInfo.Name}>{opcion.CoinInfo.FullName}</option>
-                ))} */}
+                ))}
             
             </Select>
         </Fragment>
