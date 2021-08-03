@@ -6,7 +6,7 @@ import axios from 'axios';
 import Error from './Error';
 
 
-const Boton = styled.div`
+const Button = styled.input`
     margin-top: 20px;
     font-weight: bold;
     font-size: 20px;
@@ -79,7 +79,7 @@ const Formulario = ({guardarMoneda, guardarCriptomoneda}) => {
 
             <SelectCripto />
 
-            <Boton 
+            <Button 
                 type="submit"
                 value="Calcular"
             /> 
